@@ -1,0 +1,32 @@
+import sympy as sym
+
+x,y,a,b = sym.symbols("x(1), x(2), a, b")
+
+f = (a-x)**2 + b*(y-x**2)**2
+
+fx = f.diff(x)
+fxx = f.diff(x,x)
+fyy = f.diff(y,y)
+fxy = f.diff(x,y)
+fy = f.diff(y)
+print("")
+print("")
+print("")
+print("~~~~~~fx")
+print(fx)
+print("")
+print("")
+print("~~~~~~fy")
+print(fy)
+print("")
+print("")
+print("~~~~~~fxx")
+print(fxx)
+print("")
+print("")
+print("~~~~~~fyy")
+print(fyy)
+print("")
+print("")
+print("~~~~~~fxy")
+print(fxy)
